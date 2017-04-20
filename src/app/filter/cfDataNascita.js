@@ -18,7 +18,7 @@ angular.module('app').filter('cfDataNascita', function($cacheFactory){
 		}
 		
 		var out = new Date();
-		out.setFullYear(parseInt(cacheKey.substr(0,2)));
+		out.setYear(parseInt(cacheKey.substr(0,2)));
 		out.setMonth(parseInt(MONTH_MAP.indexOf(cacheKey.substr(2,1))));
 		out.setDate(parseInt(cacheKey.substr(-2)));
 		filterCache.put(cacheKey, out);
