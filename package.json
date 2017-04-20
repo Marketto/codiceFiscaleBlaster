@@ -1,0 +1,69 @@
+{
+  "name": "codiceFiscaleBlaster",
+  "version": "0.7.2",
+  "description": "Marketto's codiceFiscaleBlaster",
+  "scripts": {
+    "build": "rimraf dist && rimraf dist_temp && webpack --bail --progress --profile && mkdir dist && inliner -mn dist_temp/index.html > dist/codiceFiscaleBlaster.html; rimraf dist_temp",
+    "server": "webpack-dev-server --history-api-fallback --inline --progress",
+    "test": "karma start",
+    "test-watch": "karma start --auto-watch --no-single-run",
+    "start": "npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Marketto/codiceFiscaleBlaster.git"
+  },
+  "author": "Marco Ricupero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Marketto/codiceFiscaleBlaster/issues"
+  },
+  "homepage": "https://github.com/Marketto/codiceFiscaleBlaster",
+  "dependencies": {
+    "angular": "1.5.9",
+    "angular-animate": "1.5.9",
+    "angular-aria": "1.5.9",
+    "angular-material": "^1.1.1",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.0",
+    "autoprefixer": "^6.0.3",
+    "babel-core": "5.8.38",
+    "babel-loader": "5.4.2",
+    "babel-preset-es2015": "6.0.2",
+    "base64-font-loader": "0.0.4",
+    "copy-webpack-plugin": "4.0.1",
+    "css-loader": "0.26.1",
+    "extract-text-webpack-plugin": "2.0.0-beta.5",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "html-minifier": "^3.3.1",
+    "html-minifier-loader": "^1.3.4",
+    "html-webpack-inline-source-plugin": "0.0.6",
+    "html-webpack-plugin": "^2.28.0",
+    "istanbul-instrumenter-loader": "^1.0.0",
+    "jasmine-core": "^2.3.4",
+    "karma": "^1.1.0",
+    "karma-coverage": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "2.0.1",
+    "ng-annotate-loader": "^0.2.0",
+    "ng-cache-loader": "0.0.23",
+    "ngtemplate-loader": "^1.3.1",
+    "node-libs-browser": "2.0.0",
+    "null-loader": "^0.1.1",
+    "optimize-css-assets-webpack-plugin": "^1.3.0",
+    "phantomjs-prebuilt": "^2.1.4",
+    "postcss-loader": "1.2.2",
+    "raw-loader": "^0.5.1",
+    "required-loader": "^1.1.11",
+    "rimraf": "^2.5.1",
+    "style-loader": "^0.13.0",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.2.0"
+  }
+}

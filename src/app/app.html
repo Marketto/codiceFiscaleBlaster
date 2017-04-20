@@ -1,0 +1,49 @@
+<main ng-controller="mainCtrl as mainCtrl" class="ng-cloak">
+    <md-content md-theme="docs-dark" layout="row" layout-padding>
+        <div class="container-element container-fluid ng-cloak col-xs-12 col-md-6">
+            <md-input-container class="md-block ng-cloak">
+                <label>Codice Fiscale</label>
+                <input ng-model="mainCtrl.codiceFiscale" class="ng-cloak" required ng-pattern="/^(?:[B-DF-HJ-NP-TV-Z](?:[AEIOU]{2}|[AEIOU]X)|[AEIOU]{2}X|[B-DF-HJ-NP-TV-Z]{2}[A-Z]){2}[\dLMNP-V]{2}(?:[A-EHLMPR-T](?:[04LQ][1-9MNP-V]|[1256LMRS][\dLMNP-V])|[DHPS][37PT][0L]|[ACELMRT][37PT][01LM])(?:[A-MZ][1-9MNP-V][\dLMNP-V]{2}|[A-M][0L](?:[\dLMNP-V][1-9MNP-V]|[1-9MNP-V][0L]))[A-Z]$/i" maxlength="16" minlength="16">
+            </md-input-container>
+        </div>
+        <div class="container-element container-fluid ng-cloak col-md-6">
+            <div class="row" ng-show="mainCtrl.codiceFiscale">
+                <div class="col-xs-6">
+                    <strong>Cognome: </strong>
+                    <span class="text-capitalize pull-right">{{mainCtrl.codiceFiscale|cfOmocode|cfCognome}}</span>
+                </div>
+
+                <div class="col-xs-6">
+                    <strong>Nome: </strong>
+                    <span class="text-capitalize pull-right">{{mainCtrl.codiceFiscale|cfOmocode|cfNome}}</span>
+                </div>
+
+                <div class="col-xs-4">
+                    <strong>Sesso: </strong>
+                    <span class="text-capitalize pull-right">{{mainCtrl.codiceFiscale|cfOmocode|cfSesso}}</span>
+                </div>
+
+                <div class="col-xs-8">
+                    <strong>Data di nascita: </strong>
+                    <span class="pull-right">{{mainCtrl.codiceFiscale|cfOmocode|cfDataNascita|date:"dd/MM/yyyy"}}</span>
+                </div>
+
+                <div class="col-xs-8">
+                    <strong>Luogo di Nascita: </strong>
+                    <span class="text-capitalize pull-right">{{mainCtrl.codiceFiscale|cfOmocode|cfLuogoNascita}}</span>
+                </div>
+
+                <div class="col-xs-4">
+                    <strong>CRC: </strong>
+                    <span class="text-uppercase pull-right">{{mainCtrl.codiceFiscale|cfCRC}}</span>
+                </div>
+
+            </div>
+            <div class="row" ng-hide="mainCtrl.codiceFiscale">
+                <div class="col-xs-12">Codice Fiscale non valido</div>
+            </div>
+        </div>
+    </md-content>
+</main>
+<footer>
+</footer>

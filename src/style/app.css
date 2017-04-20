@@ -1,0 +1,45 @@
+/* styles in src/style directory are applied to the whole page */
+
+.container-element md-input-container{
+	margin-bottom: 0.2em;
+}
+md-input-container label:not(.md-no-float):not(.md-container-ignore){
+	overflow : initial;
+}
+md-fab-trigger .md-fab>.glyphicon{
+    font-size : 1.7em;
+    top : 6px;
+    left : 2px;
+}
+.md-valign {
+	margin-top: -0.4em;
+}
+
+.md-fab .btn-text {
+    line-height: 1.8em;
+    margin-left: 0.1em;
+}
+
+.tab-content {
+    border-radius: 0 0 4px 4px;
+}
+
+.modal-loading{
+    width: 30vw;
+    max-width: 30vh;
+    height: 30vh;
+    max-height: 30vw;
+}
+
+.modal-loading md-progress-circular{
+    width: 80% !important;
+    height: 80% !important;
+    margin: 10%;
+    overflow: hidden;
+    position: fixed;
+}
+.modal-loading md-progress-circular>svg{
+    width: 100% !important;
+    height: 100% !important;
+    transform-origin: initial !important;
+}
