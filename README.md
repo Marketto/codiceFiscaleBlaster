@@ -1,6 +1,8 @@
-# Marketto Service Designer
-
-[![Dependency Status](https://david-dm.org/preboot/angular-webpack/status.svg)](https://david-dm.org/preboot/angular-webpack#info=dependencies) [![devDependency Status](https://david-dm.org/preboot/angular-webpack/dev-status.svg)](https://david-dm.org/preboot/angular-webpack#info=devDependencies)
+# codiceFiscaleBlaster
+[![Dependency status](https://david-dm.org/Marketto/codiceFiscaleBlaster.svg)](https://david-dm.org/Marketto/codiceFiscaleBlaster)
+[![Dev dependency status](https://david-dm.org/Marketto/codiceFiscaleBlaster/dev-status.svg)](https://david-dm.org/Marketto/codiceFiscaleBlaster?type=dev)
+[![Blog](https://img.shields.io/badge/blog-marketto-blue.svg)](http://blog.marketto.it)
+[![Buy me a coffee](https://img.shields.io/badge/Ko--fi-donate-blueviolet)](https://ko-fi.com/marketto)
 
 ## Installation
 ```{r, engine='bash', dev_install}
@@ -8,6 +10,8 @@ npm install
 npm start
 ```
 
-## License
+## LICENSE
+[MIT License](LICENSE)
 
-[MIT](/LICENSE)
+## AUTHORS
+[Marco Ricupero](mailto:marco.ricupero@gmail.com)
